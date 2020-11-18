@@ -20,19 +20,19 @@ while True:
     if user == 'b':
         print("Start counting \n")
 
-        Symbols = dict()
+        symbols = dict()
 
         for i in text:
             if i == ' ':
                 continue
 
-            if i in Symbols:
-                Symbols[i] += 1
+            if i in symbols:
+                symbols[i] += 1
             else:
-                Symbols[i] = 1
+                symbols[i] = 1
 
-        for character in Symbols:
-            print("Letter ", character, " number = ", Symbols[character])
+        for character in symbols:
+            print("Letter ", character, " number = ", symbols[character])
 
         print("program 'b' finished \n")
 
